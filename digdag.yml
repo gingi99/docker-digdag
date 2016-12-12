@@ -1,0 +1,9 @@
+digdag:
+  hostname: digdag
+  container_name: digdag
+  image: gingi99/digdag:latest
+  volumes:
+    - /etc/localtime:/etc/localtime:ro
+  ports: 
+    - 8080:8080
+  restart: always
